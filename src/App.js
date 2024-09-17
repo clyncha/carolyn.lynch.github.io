@@ -1,13 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import { Card, Container, Grid2 } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        Carolyn Lynch
-      </header>
-    </div>
+    <Container maxWidth="md">
+      <Grid2 container directon="row" flexDirection={"row"} gap={2}>
+      <Card>Carolyn Lynch</Card>
+      <Card>Headshot</Card>
+      </Grid2>
+    </Container>
   );
 }
 
