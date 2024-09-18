@@ -12,14 +12,22 @@ const StyledBox = styled(Box)`
 `;
 
 function Navbar() {
+  const handleGitHubOnClick = () => {
+    return window.open("https://github.com/clyncha", "_blank");
+  };
+
+  const handleLinkedInOnClick = () => {
+    return window.open("https://www.linkedin.com/in/carolyn-lynch-89587b91/", "_blank");
+  };
+
   return (
     <StyledBox gap={2} padding={2}>
       <Button color="darkgreen" variant="text">Contact</Button>
       <Button color="darkgreen" variant="text">Projects</Button>
-      <IconButton>
+      <IconButton onClick={handleGitHubOnClick}>
         <GitHubIcon/>
       </IconButton>
-      <IconButton>
+      <IconButton onClick={handleLinkedInOnClick}>
         <LinkedInIcon/>
       </IconButton>
     </StyledBox>
