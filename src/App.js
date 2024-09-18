@@ -1,13 +1,13 @@
-import { Card, Container, Grid2 } from "@mui/material";
+import { Box } from "@mui/material";
+import HomeContent from "./HomeContent.js";
+import Navbar from "./Navbar.js";
 
 function App() {
   return (
-    <Container maxWidth="md">
-      <Grid2 container directon="row" flexDirection={"row"} gap={2}>
-      <Card>Carolyn Lynch</Card>
-      <Card>Headshot</Card>
-      </Grid2>
-    </Container>
+    <Box>
+      <Navbar />
+      <HomeContent />
+    </Box>
   );
 }
 
